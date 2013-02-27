@@ -35,6 +35,7 @@ USE_CAMERA_STUB := true
 -include device/htc/msm7x30-common/bcmdhd.mk
 
 TARGET_BOOTLOADER_BOARD_NAME := glacier
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/htc/glacier/bluetooth/include
 
 # Trackpad
 BOARD_USE_LEGACY_TRACKPAD := true
