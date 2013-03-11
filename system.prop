@@ -77,3 +77,5 @@ ro.device.screen_res=480x800
 #
 ro.goo.developerid=Albinoman887
 ro.goo.rom=AlbinoCMGlacier
+
+ro.vold.umsdirtyratio=50
