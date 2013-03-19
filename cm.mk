@@ -1,9 +1,13 @@
 # Inherit from glacier device
 $(call inherit-product, device/htc/glacier/device.mk)
 
-# Inherit some common evervolv stuff.
+# Inherit some common cm stuff.
 $(call inherit-product, vendor/cm/config/gsm.mk)
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
+
+# Boot animation
+TARGET_SCREEN_HEIGHT := 800
+TARGET_SCREEN_WIDTH := 480
 
 #
 # Setup device specific product configuration.
