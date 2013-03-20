@@ -19,4 +19,7 @@
     <bool name="has_led_flash">true</bool>
     <!-- Volume Rocker Wake Support -->
     <bool name="config_show_volumeRockerWake">true</bool>
+    <!-- Trackball Wake Support -->
+    <bool name="config_show_trackballWake">true</bool>
+<bool name="has_trackball">true</bool>
 </resources>
