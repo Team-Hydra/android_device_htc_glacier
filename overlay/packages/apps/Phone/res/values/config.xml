@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2012 The CyanogenMod Project
+<!-- Copyright (C) 2009 The Android Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -14,7 +14,15 @@
      limitations under the License.
 -->
 
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- LED Flashlight -->
-    <bool name="has_led_flash">true</bool>
+<!-- Ace-specific phone app resources. -->
+<resources>
+
+    <!-- Enable the onscreen "Dial" button in the emergency dialer. -->
+    <bool name="config_show_onscreen_dial_button">true</bool>
+
+    <!-- This device uses libaudio-qsd8k which implements
+         AudioHardware::setMicMute(bool state) and AudioHardware::getMicMute(bool* state)
+         so microphone muting calls should be routed through the AudioManager API. -->
+    <bool name="send_mic_mute_to_AudioManager">true</bool>
+
 </resources>
