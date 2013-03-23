@@ -61,6 +61,10 @@ PRODUCT_PACKAGES += \
     sensors.glacier \
     gps.glacier
 
+# Torch
+PRODUCT_PACKAGES += \
+    Torch
+
 # Keylayouts
 PRODUCT_COPY_FILES += \
     device/htc/glacier/prebuilt/keylayout/h2w_headset.kl:system/usr/keylayout/h2w_headset.kl \
