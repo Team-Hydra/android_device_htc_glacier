@@ -64,7 +64,8 @@ PRODUCT_PACKAGES += \
 # Keylayouts
 PRODUCT_COPY_FILES += \
     device/htc/glacier/prebuilt/keylayout/h2w_headset.kl:system/usr/keylayout/h2w_headset.kl \
-    device/htc/glacier/prebuilt/keylayout/glacier-keypad.kl:system/usr/keylayout/glacier-keypad.kl
+    device/htc/glacier/prebuilt/keylayout/glacier-keypad.kl:system/usr/keylayout/glacier-keypad.kl \
+    device/htc/glacier/prebuilt/keylayout/curcial-oj.kl:system/usr/keylayout/curcial-oj.kl
 
 # Keychars
 PRODUCT_COPY_FILES += \
