@@ -32,8 +32,7 @@ PRODUCT_COPY_FILES += \
     device/htc/glacier/ramdisk/init.glacier.rc:root/init.glacier.rc \
     device/htc/glacier/ramdisk/init.glacier.usb.rc:root/init.glacier.usb.rc \
     device/htc/glacier/ramdisk/ueventd.glacier.rc:root/ueventd.glacier.rc \
-    device/htc/glacier/ramdisk/fstab.glacier:root/fstab.glacier \
-    device/htc/glacier/ramdisk/zram.sh:root/sbin/zram.sh
+    device/htc/glacier/ramdisk/fstab.glacier:root/fstab.glacier
 
 # Build.prop additions
 PRODUCT_PROPERTY_OVERRIDES += \
