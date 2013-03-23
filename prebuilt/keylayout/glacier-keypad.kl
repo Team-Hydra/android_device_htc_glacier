@@ -12,4 +12,6 @@ key 116   POWER             WAKE_DROPPED
 
 key 115   VOLUME_UP         WAKE
 key 114   VOLUME_DOWN       WAKE
+key 193   DPAD_CENTER       WAKE_DROPPED
+
 
