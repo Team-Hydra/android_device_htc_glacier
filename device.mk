@@ -50,10 +50,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml \
     frameworks/native/data/etc/android.hardware.camera.front.xml:system/etc/permissions/android.hardware.camera.front.xml
 
-# gsm config xml file
-PRODUCT_COPY_FILES += \
-    device/htc/glacier/prebuilt/voicemail-conf.xml:system/etc/voicemail-conf.xml
-
 # Hal
 PRODUCT_PACKAGES += \
     lights.glacier \
