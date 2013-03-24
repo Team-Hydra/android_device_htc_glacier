@@ -14,12 +14,6 @@
 # limitations under the License.
 #
 
-# media config xml file
-PRODUCT_COPY_FILES += \
-    device/htc/glacier/prebuilt/audio_policy.conf:system/etc/audio_policy.conf \
-    device/htc/glacier/prebuilt/media_profiles.xml:system/etc/media_profiles.xml \
-    device/htc/glacier/prebuilt/media_codecs.xml:system/etc/media_codecs.xml	
-
 # common msm7x30 configs
 $(call inherit-product, device/htc/msm7x30-common/msm7x30.mk)
 
