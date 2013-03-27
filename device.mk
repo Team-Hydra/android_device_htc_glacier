@@ -71,6 +71,13 @@ PRODUCT_COPY_FILES += \
     device/htc/glacier/firmware/default_org.acdb:system/etc/firmware/default_org.acdb \
     device/htc/glacier/firmware/default_org_WA.acdb:system/etc/firmware/default_org_WA.acdb
 
+# Sound Configs
+PRODUCT_COPY_FILES += \
+    device/htc/glacier/dsp/A1026_CFG.csv:system/etc/A1026_CFG.csv \
+    device/htc/glacier/dsp/AdieHWCodec.csv:system/etc/AdieHWCodec.csv \
+    device/htc/glacier/dsp/AdieHWCodec_WA.csv:system/etc/AdieHWCodec_WA.csv \
+    device/htc/glacier/dsp/AudioBTID.csv:system/etc/AudioBTID.csv \
+    device/htc/glacier/dsp/TPA2051_CFG.csv:system/etc/TPA2051_CFG.csv
 
 
 # Wifi firmware
