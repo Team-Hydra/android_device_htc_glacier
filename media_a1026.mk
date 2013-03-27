@@ -28,7 +28,3 @@
 PRODUCT_PROPERTY_OVERRIDES += \
       media.a1026.nsForVoiceRec=0 \
       media.a1026.enableA1026=1
-
-# Config
-PRODUCT_COPY_FILES += \
-    device/htc/glacier/dsp/A1026_CFG.csv:system/etc/A1026_CFG.csv \

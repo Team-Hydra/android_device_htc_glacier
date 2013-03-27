@@ -17,10 +17,3 @@
 PRODUCT_PROPERTY_OVERRIDES += \
       htc.audio.alt.enable=0 \
       htc.audio.hac.enable=0
-
-# Config
-PRODUCT_COPY_FILES += \
-    device/htc/glacier/dsp/AdieHWCodec.csv:system/etc/AdieHWCodec.csv \
-    device/htc/glacier/dsp/AdieHWCodec_WA.csv:system/etc/AdieHWCodec_WA.csv \
-    device/htc/glacier/dsp/AudioBTID.csv:system/etc/AudioBTID.csv \
-    device/htc/glacier/dsp/TPA2051_CFG.csv:system/etc/TPA2051_CFG.csv
