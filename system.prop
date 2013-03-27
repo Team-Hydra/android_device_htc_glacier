@@ -66,3 +66,8 @@ ro.device.gpu=Adreno 205
 ro.device.front_cam=0.3 Megapixels
 ro.device.rear_cam=5 Megapixels
 ro.device.screen_res=480x800
+#
+# GooManger
+#
+ro.goo.developerid=Albinoman887
+ro.goo.rom=AlbinoCMGlacier
