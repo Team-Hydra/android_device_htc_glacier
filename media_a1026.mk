@@ -31,4 +31,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Config
 PRODUCT_COPY_FILES += \
-    device/htc/glacier/prebuilt/A1026_CFG.csv:system/etc/A1026_CFG.csv \
+    device/htc/glacier/dsp/A1026_CFG.csv:system/etc/A1026_CFG.csv \

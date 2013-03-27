@@ -20,7 +20,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Config
 PRODUCT_COPY_FILES += \
-    device/htc/glacier/prebuilt/AdieHWCodec.csv:system/etc/AdieHWCodec.csv \
-    device/htc/glacier/prebuilt/AdieHWCodec_WA.csv:system/etc/AdieHWCodec_WA.csv \
-    device/htc/glacier/prebuilt/AudioBTID.csv:system/etc/AudioBTID.csv \
-    device/htc/glacier/prebuilt/TPA2051_CFG.csv:system/etc/TPA2051_CFG.csv
+    device/htc/glacier/dsp/AdieHWCodec.csv:system/etc/AdieHWCodec.csv \
+    device/htc/glacier/dsp/AdieHWCodec_WA.csv:system/etc/AdieHWCodec_WA.csv \
+    device/htc/glacier/dsp/AudioBTID.csv:system/etc/AudioBTID.csv \
+    device/htc/glacier/dsp/TPA2051_CFG.csv:system/etc/TPA2051_CFG.csv
