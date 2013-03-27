@@ -34,8 +34,8 @@ USE_CAMERA_STUB := true
 # inherit bcmdhd config
 -include device/htc/msm7x30-common/bcmdhd.mk
 
+# Bootloader Board Name
 TARGET_BOOTLOADER_BOARD_NAME := glacier
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/htc/glacier/bluetooth/include
 
 # Trackpad
 BOARD_USE_LEGACY_TRACKPAD := true

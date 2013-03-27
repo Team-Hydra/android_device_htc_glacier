@@ -17,11 +17,7 @@
 # common msm7x30 configs
 $(call inherit-product, device/htc/msm7x30-common/msm7x30.mk)
 
-# The gps config appropriate for this device
-PRODUCT_COPY_FILES += \
-    device/htc/glacier/prebuilt/gps.conf:system/etc/gps.conf
-
-# Ramsidk
+# Ramdisck
 PRODUCT_COPY_FILES += \
     device/htc/glacier/ramdisk/init.glacier.rc:root/init.glacier.rc \
     device/htc/glacier/ramdisk/init.glacier.usb.rc:root/init.glacier.usb.rc \
@@ -56,26 +52,26 @@ PRODUCT_PACKAGES += \
 
 # Keylayouts
 PRODUCT_COPY_FILES += \
-    device/htc/glacier/prebuilt/keylayout/h2w_headset.kl:system/usr/keylayout/h2w_headset.kl \
-    device/htc/glacier/prebuilt/keylayout/glacier-keypad.kl:system/usr/keylayout/glacier-keypad.kl \
-    device/htc/glacier/prebuilt/keylayout/curcial-oj.kl:system/usr/keylayout/curcial-oj.kl
+    device/htc/glacier/keylayout/h2w_headset.kl:system/usr/keylayout/h2w_headset.kl \
+    device/htc/glacier/keylayout/glacier-keypad.kl:system/usr/keylayout/glacier-keypad.kl \
+    device/htc/glacier/keylayout/curcial-oj.kl:system/usr/keylayout/curcial-oj.kl
 
 # Keychars
 PRODUCT_COPY_FILES += \
-    device/htc/glacier/prebuilt/keychars/glacier-keypad.kcm.bin:system/usr/keychars/glacier-keypad.kcm.bin
+    device/htc/glacier/keychars/glacier-keypad.kcm.bin:system/usr/keychars/glacier-keypad.kcm.bin
 
 # IDC Files
 PRODUCT_COPY_FILES += \
-    device/htc/glacier/prebuilt/idc/atmel-touchscreen.idc:system/usr/idc/atmel-touchscreen.idc \
-    device/htc/glacier/prebuilt/idc/glacier-keypad.idc:system/usr/idc/glacier-keypad.idc \
-    device/htc/glacier/prebuilt/idc/curcial-oj.idc:system/usr/idc/curcial-oj.idc \
+    device/htc/glacier/idc/atmel-touchscreen.idc:system/usr/idc/atmel-touchscreen.idc \
+    device/htc/glacier/idc/glacier-keypad.idc:system/usr/idc/glacier-keypad.idc \
+    device/htc/glacier/idc/curcial-oj.idc:system/usr/idc/curcial-oj.idc \
 
 # Firmware
 PRODUCT_COPY_FILES += \
-    device/htc/glacier/prebuilt/firmware/bcm4329.hcd:system/vendor/firmware/bcm4329.hcd \
-    device/htc/glacier/prebuilt/firmware/default.acdb:system/etc/firmware/default.acdb \
-    device/htc/glacier/prebuilt/firmware/default_org.acdb:system/etc/firmware/default_org.acdb \
-    device/htc/glacier/prebuilt/firmware/default_org_WA.acdb:system/etc/firmware/default_org_WA.acdb
+    device/htc/glacier/firmware/bcm4329.hcd:system/vendor/firmware/bcm4329.hcd \
+    device/htc/glacier/firmware/default.acdb:system/etc/firmware/default.acdb \
+    device/htc/glacier/firmware/default_org.acdb:system/etc/firmware/default_org.acdb \
+    device/htc/glacier/firmware/default_org_WA.acdb:system/etc/firmware/default_org_WA.acdb
 
 
 
@@ -84,7 +80,7 @@ $(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4329
 
 # Vold
 PRODUCT_COPY_FILES += \
-    device/htc/glacier/prebuilt/vold.fstab:system/etc/vold.fstab
+    device/htc/glacier/configs/vold.fstab:system/etc/vold.fstab
 
 # device specific props
 $(call inherit-product-if-exists, vendor/htc/glacier/device-vendor.mk)
