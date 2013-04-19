@@ -17,7 +17,7 @@
 # common msm7x30 configs
 $(call inherit-product, device/htc/msm7x30-common/msm7x30.mk)
 
-# Ramdisck
+# Ramdisk
 PRODUCT_COPY_FILES += \
     device/htc/glacier/ramdisk/init.glacier.rc:root/init.glacier.rc \
     device/htc/glacier/ramdisk/init.glacier.usb.rc:root/init.glacier.usb.rc \
@@ -78,7 +78,6 @@ PRODUCT_COPY_FILES += \
     device/htc/glacier/dsp/AdieHWCodec_WA.csv:system/etc/AdieHWCodec_WA.csv \
     device/htc/glacier/dsp/AudioBTID.csv:system/etc/AudioBTID.csv \
     device/htc/glacier/dsp/TPA2051_CFG.csv:system/etc/TPA2051_CFG.csv
-
 
 # Wifi firmware
 $(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4329/device-bcm.mk)
