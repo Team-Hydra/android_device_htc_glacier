@@ -67,7 +67,7 @@ BOARD_KERNEL_PAGE_SIZE := 4096
 BUILD_KERNEL := true
 TARGET_KERNEL_SOURCE := kernel/htc/msm7x30
 TARGET_KERNEL_CONFIG := evervolv_glacier_defconfig
-TARGET_KERNEL_CUSTOM_TOOLCHAIN := linaro
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := linaro-arm-cortex-a8
 TARGET_KERNEL_CUSTOM_TOOLCHAIN_SUFFIX := arm-cortex_a8-linux-gnueabi
 
 # filesystems
