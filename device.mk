@@ -82,10 +82,6 @@ PRODUCT_COPY_FILES += \
 # Wifi firmware
 $(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4329/device-bcm.mk)
 
-# Vold
-PRODUCT_COPY_FILES += \
-    device/htc/glacier/configs/vold.fstab:system/etc/vold.fstab
-
 # device specific props
 $(call inherit-product-if-exists, vendor/htc/glacier/device-vendor.mk)
 

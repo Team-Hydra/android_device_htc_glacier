@@ -1,16 +1,29 @@
 import init.glacier.usb.rc
 
 on early-init
-    mkdir /storage 0555 root root
-    mkdir /storage/sdcard0 0555 root root
+    #mkdir /storage 0555 root root
+    #mkdir /storage/sdcard0 0555 root root
+    mkdir /storage/sdcard0 0000 system system
+    mkdir /storage/usbdisk 0000 system system
+
+    # for backwards compatibility
+    symlink /storage/sdcard0 /sdcard
+    symlink /storage/sdcard0 /mnt/sdcard
+    symlink /storage/usbdisk /usbdisk
+    symlink /storage/usbdisk /mnt/usbdisk
+
+
     export EXTERNAL_STORAGE /storage/sdcard0
 
     # Support legacy paths
-    symlink /storage/sdcard0 /sdcard
-    symlink /storage/sdcard0 /mnt/sdcard
+    #symlink /storage/sdcard0 /sdcard
+    #symlink /storage/sdcard0 /mnt/sdcard
 
     setprop ro.crypto.tmpfs_options size=128m,mode=0771,uid=1000,gid=1000
     write /proc/sys/vm/min_free_kbytes 8192
+
+    # 4.3 requires this
+    chmod 0644 /proc/cmdline
 
 on early-fs
     mkdir /devlog 0700 root root
@@ -42,9 +55,6 @@ on post-fs-data
 
     # Set indication (checked by vold) that we have finished this action
     setprop vold.post_fs_data_done 1
-
-on property:sys.boot_completed=1
-    start szram
 
 on boot
     # CyanogenMod SysFS entries
@@ -179,13 +189,7 @@ service bugreport /system/bin/bugmailer.sh -v
     disabled
     oneshot
     keycodes 158 139
-
 service rmt_storage /system/bin/rmt_storage /dev/block/mmcblk0p13 /dev/block/mmcblk0p14
     class main
     user root
 
-service szram /sbin/zram.sh
-    class main
-    user root
-    oneshot
-    disabled
