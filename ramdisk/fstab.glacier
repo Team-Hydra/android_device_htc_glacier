@@ -7,4 +7,4 @@
 /dev/block/mmcblk0p26           /data           ext4    noatime,nosuid,nodev,barrier=0    wait
 
 #SDCard
-/devices/platform/msm_sdcc.4/mmc_host   /storage/sdcard0    1    defaults     voldmanaged=sdcard:1
+/devices/platform/msm_sdcc.4/mmc_host/mmc2   /storage/sdcard0    1    defaults     voldmanaged=sdcard:1
