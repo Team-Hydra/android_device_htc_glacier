@@ -30,7 +30,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.locationfeatures=1 \
     ro.setupwizard.enable_bypass=1 \
     dalvik.vm.lockprof.threshold=500 \
-    dalvik.vm.dexopt-flags=m=y
+    dalvik.vm.dexopt-flags=m=y \
+    ro.bq.gpu_to_cpu_unsupported=1
 
 DEVICE_PACKAGE_OVERLAYS += device/htc/glacier/overlay
 
