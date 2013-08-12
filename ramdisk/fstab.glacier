@@ -7,5 +7,5 @@
 /dev/block/mmcblk0p26           /data           ext4    noatime,nosuid,nodev,noauto_da_alloc,barrier=0		wait,encryptable=footer
 
 #SDCard
-/devices/platform/msm_sdcc.4/mmc_host/mmc2   /storage/sdcard0    1    defaults     voldmanaged=sdcard0:1
+/devices/platform/msm_sdcc.4/mmc_host/mmc2   /storage/sdcard0    auto    defaults     voldmanaged=sdcard:auto
 /devices/platform/msm_hsusb_host.0/usb1 /storage/usbdisk auto  defaults  voldmanaged=usbdisk:auto
