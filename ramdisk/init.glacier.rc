@@ -183,6 +183,6 @@ service bugreport /system/bin/bugmailer.sh -v
     keycodes 158 139
 
 service rmt_storage /system/bin/rmt_storage /dev/block/mmcblk0p13 /dev/block/mmcblk0p14
-    class core
+    class main
     user root
 
